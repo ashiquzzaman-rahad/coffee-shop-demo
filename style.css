@@ -17,7 +17,7 @@ a {
   background-repeat: no-repeat, no-repeat;
   background-position: 60vw 0vw, 0vw 40vw;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 /* header section */
@@ -52,6 +52,8 @@ nav li {
 
 .search-bar input {
   border: none;
+  position: relative;
+  z-index: 10;
 }
 
 .search-bar input:focus {
@@ -231,6 +233,8 @@ nav li {
 .popular-section{
   /* border: 1px solid black; */
   height: 20vw;
+  position: relative;
+  z-index: 10;
 }
 
 .popular-products{
@@ -426,6 +430,7 @@ nav li {
   border-radius: 1vw;
   box-shadow: 10px 5px 20px 5px rgba(0, 0, 0, 0.183);
   padding: 1vw;
+  cursor: pointer;
 }
 
 .menu-img img{
@@ -615,8 +620,239 @@ nav li {
   z-index: 1;
 }
 
+/* customer section */
+.customer-section{
+  margin: 3vw 0 5vw 0;
+  display: flex;
+  width: 80vw;
+}
+
+.customer-text{
+  background-color: #F6EBDA;
+  width: 85%;
+  height: 30vw;
+  border-radius: 0 1vw 1vw 0vw;
+}
+
+.customer-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10vw 0vw 2vw 10vw;
+}
+
+.customer-paragraph{
+  width: 30vw;
+  padding: 0vw 0vw 2vw 10vw;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #7E7D7A;
+}
+
+.back-img2 img{
+  opacity: 0.2;
+  height: 25vw;
+  width: 60%;
+  position: absolute;
+  top: 239vw;
+  left: 0;
+}
+
+.customers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vw;
+  position: absolute;
+  top: 243vw;
+  left: 42vw;
+  width: 50%;
+  z-index: 2;
+}
+
+.customer{
+  width: 30%;
+}
+
+.image-customer{
+  width: 14vw;
+  height: 17vw;
+  object-fit: cover;
+  border: 4px solid #FFD3909E;
+}
+
+.customer-talks1{
+  background-color: #FFCB7C;
+  width: 95%;
+  height: 5vw;
+  font-size: 0.8rem;
+  padding: 0.2vw 1vw;
+  border-radius: 0.6vw;
+  word-spacing: 0.3vw;
+  position: relative;
+  bottom: 7.15vw;
+  left: 2.2vw;
+  z-index: 3;
+}
+
+
+.customer-back1{
+  width: 14vw;
+  height: 5.6vw;
+  /* background-color: black; */
+  background-color: #FFD3909E;
+  position: absolute;
+  top: 10vw;
+  left: -2.5vw;
+  z-index: 2;
+  border-radius: 1vw;
+  opacity: 1;
+}
+
+.customer-talks2{
+  background-color: #FFCB7C;
+  width: 95%;
+  height: 5vw;
+  font-size: 0.8rem;
+  padding: 0.2vw 1vw;
+  border-radius: 0.6vw;
+  word-spacing: 0.3vw;
+  position: relative;
+  bottom: 7.15vw;
+  left: 1.7vw;
+  z-index: 3;
+}
+
+
+.customer-back2{
+  width: 14vw;
+  height: 5.6vw;
+  /* background-color: black; */
+  background-color: #FFD3909E;
+  position: absolute;
+  top: 10vw;
+  left: 19vw;
+  z-index: 2;
+  border-radius: 1vw;
+  opacity: 1;
+}
+
+.customer-talks3{
+  background-color: #FFCB7C;
+  width: 94%;
+  height: 5vw;
+  font-size: 0.8rem;
+  padding: 0.2vw 1vw;
+  border-radius: 0.6vw;
+  word-spacing: 0.3vw;
+  position: relative;
+  bottom: 7.15vw;
+  left: 2.7vw;
+  z-index: 3;
+}
+
+
+.customer-back3{
+  width: 14vw;
+  height: 5.6vw;
+  /* background-color: black; */
+  background-color: #FFD3909E;
+  position: absolute;
+  top: 10vw;
+  left: 42vw;
+  z-index: 2;
+  border-radius: 1vw;
+  opacity: 1;
+}
+
+.customer-testimonial{
+  font-size: 0.6rem;
+}
+
+.dots{
+  position: absolute;
+  top: 258vw;
+  left: 69vw;
+  display: flex;
+  gap: 1vw;
+  z-index: 3;
+  font-size: 3rem;
+}
+
+.selected{
+  color: #FF902B;
+  cursor: pointer;
+}
+
+.unselected{
+  color: #F8E9D2;
+  /* display: inline-block; */
+  cursor: pointer;
+}
+
+/* footer section */
+footer{
+  height: 36vw;
+}
+.footer{
+  width: 100%;
+  width: 80vw;
+  height: 30vw;
+  background-image: url(./images/footer-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  background-size: 80vw auto;
+  border-radius: 1vw;
+  /* border: 5px solid #FF902B; */
+  filter: brightness(0.6);
+}
+
+.footer-title{
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 20vw; 
+}
+
+.subscription{
+  width: 35vw;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 18vw;
+  margin: auto;
+  border-radius: 2vw;
+  padding: 0.3vw 0;
+}
+
+.subscription input{
+  width: 70%;
+  padding: 1vw;
+  border: none;
+  border-radius: 2vw;
+  font-size: 1rem;
+}
+
+.subscription input:focus{
+  outline: none;
+}
+
+.order-now{
+  background-color: #2F2105;
+  color: white;
+  padding: 1vw;
+  display: inline-block;
+  margin-left: 1.4vw;
+  border-radius: 2vw;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .block{
   background-color: red;
   width: 100%;
   height: 10vw;
 }
+

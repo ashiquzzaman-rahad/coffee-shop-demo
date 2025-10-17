@@ -40,7 +40,8 @@ nav li {
 
 .search-cart {
   display: flex;
-  gap: 3vw;
+  justify-content: center;
+  gap: 1vw;
 }
 
 .search-bar {

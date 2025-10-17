@@ -15,7 +15,7 @@ a {
   background-image: url(./images/bg_img_hero.svg),
     url(./images/bg_img_hero2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 60vw 0vw, 0vw 40vw;
+  background-position: right top, left bottom;
   position: relative;
   z-index: 1;
 }

@@ -54,6 +54,7 @@ nav li {
   border: none;
   position: relative;
   z-index: 10;
+  width: 13vw;
 }
 
 .search-bar input:focus {
